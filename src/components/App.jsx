@@ -55,7 +55,6 @@ export class App extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log('test updateu');
     const contactsStringified = JSON.stringify(this.state.contacts);
     window.localStorage.setItem('contacts', contactsStringified);
   }
